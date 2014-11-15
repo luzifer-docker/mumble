@@ -7,7 +7,7 @@ RUN useradd -u 1000 mumble && \
     mkdir /data && chown 1000 /data
 
 VOLUME ["/data", "/etc/mumble-server.ini"]
-EXPOSE 64738
+EXPOSE 64738 64738/udp
 
 USER mumble
 ENTRYPOINT ["/usr/sbin/murmurd", "-fg", "-ini", "/etc/mumble-server.ini"]
