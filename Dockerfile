@@ -10,4 +10,4 @@ VOLUME ["/data", "/etc/mumble-server.ini"]
 EXPOSE 64738
 
 USER mumble
-ENTRYPOINT ["/usr/sbin/murmurd", "-ini", "/etc/mumble-server.ini"]
+ENTRYPOINT ["/usr/sbin/murmurd", "-fg", "-ini", "/etc/mumble-server.ini"]
