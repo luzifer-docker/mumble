@@ -17,5 +17,5 @@ This repository contains **Dockerfile** of [Mumble](http://wiki.mumble.info/wiki
 To launch it, just type:
 
 ```
-docker run -d -p 64738:64738 luzifer/mumble
+docker run -d -p 64738:64738 -p 64738:64738/udp luzifer/mumble
 ```
